@@ -11,6 +11,8 @@ class BADASS_API ALetterPuzzleButton : public AActor
 	GENERATED_BODY()
 	
 public:	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PuzzleButtonProperties")
+	FString theLetter;
 	// Sets default values for this actor's properties
 	ALetterPuzzleButton();
 
