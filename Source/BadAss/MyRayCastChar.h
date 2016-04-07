@@ -29,8 +29,9 @@ public:
 	//handles strafing
 	UFUNCTION()
 		void MoveRight(float Val);
-	UFUNCTION()
-		void OnFire();
+
+	UFUNCTION(BlueprintCallable, Category = "Character")
+	bool DealWithActor(FHitResult i_result);
 
 
 	
