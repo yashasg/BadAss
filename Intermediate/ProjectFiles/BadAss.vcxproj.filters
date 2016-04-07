@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<None Include="..\..\BadAss.uproject" />
+		<Filter Include="Source">
+			<UniqueIdentifier>{647F0A92-D478-4E42-8FCA-44464DA4FFB6}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\BadAss.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<None Include="..\..\Source\BadAssEditor.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<Filter Include="Config">
+			<UniqueIdentifier>{E3C6AB64-B0AE-4839-8974-00324FD4CCAB}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Config\DefaultEditor.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEngine.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultGame.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultInput.ini">
+			<Filter>Config</Filter>
+		</None >
+		<Filter Include="Source\BadAss">
+			<UniqueIdentifier>{D5C0A318-BB47-4807-B540-1CDFEFFE7075}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\BadAss\BadAss.Build.cs">
+			<Filter>Source\BadAss</Filter>
+		</None >
+		<ClCompile Include="..\..\Source\BadAss\BadAss.cpp">
+			<Filter>Source\BadAss</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\BadAss\BadAss.h">
+			<Filter>Source\BadAss</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\BadAss\LetterPuzzleButton.cpp">
+			<Filter>Source\BadAss</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\BadAss\LetterPuzzleButton.h">
+			<Filter>Source\BadAss</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\BadAss\LetterPuzzleConsole.cpp">
+			<Filter>Source\BadAss</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\BadAss\LetterPuzzleConsole.h">
+			<Filter>Source\BadAss</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\BadAss\MyActor.cpp">
+			<Filter>Source\BadAss</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\BadAss\MyActor.h">
+			<Filter>Source\BadAss</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\BadAss\MyActor2.cpp">
+			<Filter>Source\BadAss</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\BadAss\MyActor2.h">
+			<Filter>Source\BadAss</Filter>
+		</ClInclude >
+	</ItemGroup>
+</Project>
