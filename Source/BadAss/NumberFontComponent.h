@@ -23,7 +23,7 @@ public:
 	//array to strore 3dModel of Numbers
 	UPROPERTY(EditAnyWhere, BlueprintReadWrite, Category = "Digital Clock")
 	class UStaticMeshComponent* m_numberArray[10];
-
+	UFUNCTION(BlueprintCallable, Category = "Digital Clock")
 	bool AddToArray(class UStaticMeshComponent* i_symbol, int i_Position);
 
 		
