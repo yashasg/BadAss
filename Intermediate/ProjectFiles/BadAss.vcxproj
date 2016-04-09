@@ -275,7 +275,9 @@
     <ClInclude Include="..\..\Source\BadAss\MyActor.h" />
     <ClCompile Include="..\..\Source\BadAss\MyRayCastChar.cpp" />
     <ClInclude Include="..\..\Source\BadAss\MyRayCastChar.h" />
+    <ClCompile Include="..\..\Source\BadAss\NumberFontComponent.cpp" />
     <ClCompile Include="..\..\Source\BadAss\TestActor.cpp" />
+    <ClInclude Include="..\..\Source\BadAss\NumberFontComponent.h" />
     <ClInclude Include="..\..\Source\BadAss\TestActor.h" />
   </ItemGroup>
   <PropertyGroup>
