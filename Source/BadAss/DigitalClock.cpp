@@ -3,6 +3,7 @@
 #include "BadAss.h"
 #include "DigitalClock.h"
 #include <string>
+#include <stdlib.h>
 
 
 // Sets default values
@@ -11,7 +12,7 @@ ADigitalClock::ADigitalClock()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 	m_Hours = 11;
-	m_Minutes = 55;
+	m_Minutes = std::rand()%60;
 
 }
 
