@@ -34,3 +34,8 @@ void UNumberFontComponent::TickComponent( float DeltaTime, ELevelTick TickType, 
 	// ...
 }
 
+bool UNumberFontComponent::AddToArray(UStaticMeshComponent * i_symbol, int i_Position)
+{
+	return false;
+}
+
