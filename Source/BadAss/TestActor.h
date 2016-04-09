@@ -6,7 +6,7 @@
 #include "TestActor.generated.h"
 
 UCLASS()
-class BADASS_API ATestActor : public AActor
+class BADASS_API ATestActor : public AActor, public IInterface
 {
 	GENERATED_BODY()
 	
