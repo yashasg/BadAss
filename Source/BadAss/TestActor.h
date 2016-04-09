@@ -3,13 +3,18 @@
 #pragma once
 
 #include "GameFramework/Actor.h"
+#include "IInteractable.h"
 #include "TestActor.generated.h"
 
+
 UCLASS()
-class BADASS_API ATestActor : public AActor, public IInterface
+class BADASS_API ATestActor : public AActor,public IInteractable
 {
 	GENERATED_BODY()
-	
+
+
+
+
 public:	
 	// Sets default values for this actor's properties
 	ATestActor();
@@ -22,4 +27,11 @@ public:
 
 	
 	
+
+	// Inherited via IInteractable
+	virtual void OnInteraction_Implementation();
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Cube")
+	class UStaticMeshComponent* m_cube;
+
 };

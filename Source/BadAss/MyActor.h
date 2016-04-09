@@ -11,15 +11,6 @@ class BADASS_API AMyActor : public AActor
 	GENERATED_BODY()
 	
 public:	
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Damage")
-		int32 TotalDamage;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Damage")
-		float DamageTimeInSeconds;
-
-	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Transient, Category = "Damage")
-		float DamagePerSecond;
 	// Sets default values for this actor's properties
 	AMyActor();
 
