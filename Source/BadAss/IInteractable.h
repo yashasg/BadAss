@@ -2,12 +2,12 @@
 #include "IInteractable.generated.h"
 
 UINTERFACE(Blueprintable)
-class UInteractable : public UInterface
+class BADASS_API UInteractable : public UInterface
 {
 	GENERATED_UINTERFACE_BODY()
 };
 
-class IInteractable
+class  BADASS_API IInteractable
 {
 	GENERATED_IINTERFACE_BODY()
 

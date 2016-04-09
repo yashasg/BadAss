@@ -1,6 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "BadAss.h"
+#include "IInteractable.h"
 #include "MyRayCastChar.h"
 
 
@@ -72,6 +73,9 @@ void AMyRayCastChar::MoveRight(float Value)
 bool AMyRayCastChar::DealWithActor(FHitResult  i_result)
 {
 	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("in Deal with Actor"));
+	IInteractable* interactedObject = InterfaceCast<IInteractable>(i_result.GetActor());
+	if (interactedObject)
+		interactedObject->OnInteraction_Implementation();
 	return true;
 }
 
