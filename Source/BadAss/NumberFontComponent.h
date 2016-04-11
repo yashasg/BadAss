@@ -22,9 +22,14 @@ public:
 	virtual void TickComponent( float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction ) override;
 	//array to strore 3dModel of Numbers
 	UPROPERTY(EditAnyWhere, BlueprintReadWrite, Category = "Digital Clock")
-	class UStaticMeshComponent* m_numberArray[10];
+	 TArray<UStaticMeshComponent*> m_numberArray;
 
-	bool AddToArray(class UStaticMeshComponent* i_symbol, int i_Position);
+
+	UFUNCTION(BlueprintCallable, Category = "Digital Clock")
+	bool AddToArray(class UStaticMeshComponent* i_symbol, uint8 i_Position);
+
+
+	class UStaticMeshComponent* getModel(uint8 i_Position);
 
 		
 	

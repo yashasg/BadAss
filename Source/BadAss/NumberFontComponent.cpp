@@ -12,6 +12,10 @@ UNumberFontComponent::UNumberFontComponent()
 	bWantsBeginPlay = true;
 	PrimaryComponentTick.bCanEverTick = true;
 
+	/*m_numberArray[0] = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("MESH"));
+	const ConstructorHelpers::FObjectFinder<UStaticMesh> MeshObj(TEXT(""));
+	m_numberArray[0]->SetStaticMesh(MeshObj.Object);*/
+
 	// ...
 }
 
@@ -32,5 +36,16 @@ void UNumberFontComponent::TickComponent( float DeltaTime, ELevelTick TickType, 
 	Super::TickComponent( DeltaTime, TickType, ThisTickFunction );
 
 	// ...
+}
+
+bool UNumberFontComponent::AddToArray(UStaticMeshComponent * i_symbol, uint8 i_Position)
+{
+	m_numberArray[i_Position] = i_symbol;
+	return true;
+}
+
+UStaticMeshComponent * UNumberFontComponent::getModel(uint8 i_Position)
+{
+	return nullptr;
 }
 
