@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\BadAss.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{647F0A92-D478-4E42-8FCA-44464DA4FFB6}</UniqueIdentifier>
+			<UniqueIdentifier>{AC0F4DEF-151C-471C-B9FD-2B7792391FD5}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\BadAss.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{E3C6AB64-B0AE-4839-8974-00324FD4CCAB}</UniqueIdentifier>
+			<UniqueIdentifier>{2C15F1DD-D9AA-461C-82C7-8EDE0F86DE0D}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -31,7 +31,7 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\BadAss">
-			<UniqueIdentifier>{D5C0A318-BB47-4807-B540-1CDFEFFE7075}</UniqueIdentifier>
+			<UniqueIdentifier>{C8D992F8-52E1-4427-A520-9893648EEA44}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\BadAss\BadAss.Build.cs">
 			<Filter>Source\BadAss</Filter>
@@ -60,10 +60,10 @@
 		<ClInclude Include="..\..\Source\BadAss\MyActor.h">
 			<Filter>Source\BadAss</Filter>
 		</ClInclude >
-		<ClCompile Include="..\..\Source\BadAss\MyActor2.cpp">
+		<ClCompile Include="..\..\Source\BadAss\SliderButton.cpp">
 			<Filter>Source\BadAss</Filter>
 		</ClCompile >
-		<ClInclude Include="..\..\Source\BadAss\MyActor2.h">
+		<ClInclude Include="..\..\Source\BadAss\SliderButton.h">
 			<Filter>Source\BadAss</Filter>
 		</ClInclude >
 	</ItemGroup>
