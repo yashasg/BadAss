@@ -67,6 +67,7 @@ void ADigitalClock::setTextMinute(UTextRenderComponent * i_TextMin)
 
 bool ADigitalClock::checkTimeEqual(ADigitalClock * i_other)
 {
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::FromInt( m_Hours) + FString::FromInt(m_Minutes));
 	if (m_Hours == i_other->m_Hours && m_Minutes == i_other->m_Minutes)
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Equal Time"));
