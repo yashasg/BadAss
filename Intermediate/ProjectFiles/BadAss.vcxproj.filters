@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\BadAss.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{AC0F4DEF-151C-471C-B9FD-2B7792391FD5}</UniqueIdentifier>
+      <UniqueIdentifier>{67421280-15BB-4AFA-B2CF-964D750B50B8}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\BadAss.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{2C15F1DD-D9AA-461C-82C7-8EDE0F86DE0D}</UniqueIdentifier>
+      <UniqueIdentifier>{C2DBD5CA-2B10-4284-95B3-04A172D3C17B}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\BadAss">
-      <UniqueIdentifier>{C8D992F8-52E1-4427-A520-9893648EEA44}</UniqueIdentifier>
+      <UniqueIdentifier>{CD86AD3C-03D9-4D6E-9891-1476BB12CDB4}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\BadAss\BadAss.Build.cs">
       <Filter>Source\BadAss</Filter>
@@ -39,6 +39,18 @@
       <Filter>Source\BadAss</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\BadAss\BadAss.h">
+      <Filter>Source\BadAss</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\BadAss\DigitalClock.cpp">
+      <Filter>Source\BadAss</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\BadAss\DigitalClock.h">
+      <Filter>Source\BadAss</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\BadAss\IInteractable.cpp">
+      <Filter>Source\BadAss</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\BadAss\IInteractable.h">
       <Filter>Source\BadAss</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\BadAss\LetterPuzzleButton.cpp">
@@ -59,20 +71,26 @@
     <ClInclude Include="..\..\Source\BadAss\MyActor.h">
       <Filter>Source\BadAss</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\BadAss\SliderButton.cpp">
+    <ClCompile Include="..\..\Source\BadAss\MyRayCastChar.cpp">
       <Filter>Source\BadAss</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\BadAss\SliderButton.h">
+    <ClInclude Include="..\..\Source\BadAss\MyRayCastChar.h">
+      <Filter>Source\BadAss</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\BadAss\TestActor.cpp">
+      <Filter>Source\BadAss</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\BadAss\TestActor.h">
       <Filter>Source\BadAss</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Source\BadAss\SliderConsole.h">
+    <ClInclude Include="..\..\Source\BadAss\ButtonCPP.h">
       <Filter>Source\BadAss</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\BadAss\SliderConsole.cpp">
+    <ClCompile Include="..\..\Source\BadAss\ButtonCPP.cpp">
       <Filter>Source\BadAss</Filter>
     </ClCompile>
   </ItemGroup>
