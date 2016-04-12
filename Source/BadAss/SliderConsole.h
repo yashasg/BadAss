@@ -10,11 +10,15 @@ UCLASS()
 class BADASS_API ASliderConsole : public AActor
 {
 	GENERATED_BODY()
+
 	
 public:	
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		//FString str;
-	TArray<ASliderButton*> buttons;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PuzzleConsoleProperties")
+	//FString str;
+	TArray<ASliderButton*> sliderButtons;
+
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PuzzleConsoleProperties")
+	int32 emptyIndex;
 
 	// Sets default values for this actor's properties
 	ASliderConsole();
@@ -25,6 +29,9 @@ public:
 	// Called every frame
 	virtual void Tick( float DeltaSeconds ) override;
 
+	UFUNCTION(BlueprintCallable, Category = "PuzzleConsoleFunctions")
+	bool CheckPattern();
 	
-	
+	UFUNCTION(BlueprintCallable, Category = "PuzzleConsoleFunctions")
+		bool MoveTile(int32 index);
 };

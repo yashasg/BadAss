@@ -11,6 +11,11 @@ class BADASS_API ASliderButton : public AActor
 	GENERATED_BODY()
 	
 public:	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PuzzleConsoleProperties")
+	int32 correctPosition;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PuzzleConsoleProperties")
+	int32 currentPosition;
+
 	// Sets default values for this actor's properties
 	ASliderButton();
 
@@ -20,6 +25,4 @@ public:
 	// Called every frame
 	virtual void Tick( float DeltaSeconds ) override;
 
-	
-	
 };

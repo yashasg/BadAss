@@ -17,6 +17,7 @@ void ASliderButton::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	
 }
 
 // Called every frame
