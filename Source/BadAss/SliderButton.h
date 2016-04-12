@@ -3,10 +3,11 @@
 #pragma once
 
 #include "GameFramework/Actor.h"
+#include "IInteractable.h"
 #include "SliderButton.generated.h"
 
 UCLASS()
-class BADASS_API ASliderButton : public AActor
+class BADASS_API ASliderButton : public AActor, public IInteractable
 {
 	GENERATED_BODY()
 	
@@ -25,4 +26,5 @@ public:
 	// Called every frame
 	virtual void Tick( float DeltaSeconds ) override;
 
+	void OnInteraction_Implementation();
 };

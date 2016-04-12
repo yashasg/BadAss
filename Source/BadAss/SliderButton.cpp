@@ -27,3 +27,8 @@ void ASliderButton::Tick( float DeltaTime )
 
 }
 
+void ASliderButton::OnInteraction_Implementation()
+{
+	FOutputDeviceNull ar;
+	this->CallFunctionByNameWithArguments(TEXT("OnClickButton"), ar, NULL, true);
+}
