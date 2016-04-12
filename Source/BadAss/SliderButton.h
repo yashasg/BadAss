@@ -3,11 +3,10 @@
 #pragma once
 
 #include "GameFramework/Actor.h"
-#include "IInteractable.h"
 #include "SliderButton.generated.h"
 
 UCLASS()
-class BADASS_API ASliderButton : public AActor, public IInteractable
+class BADASS_API ASliderButton : public AActor
 {
 	GENERATED_BODY()
 	

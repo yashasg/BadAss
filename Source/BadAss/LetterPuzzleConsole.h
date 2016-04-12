@@ -18,7 +18,7 @@ public:
 	FString theCorrectWord;
 
 	UFUNCTION(BlueprintCallable, Category = "PuzzleConsoleFunctions")
-	void UpdateTheWord(FString i_newLetter);
+	bool UpdateTheWord(FString i_newLetter);
 
 	// Sets default values for this actor's properties
 	ALetterPuzzleConsole();

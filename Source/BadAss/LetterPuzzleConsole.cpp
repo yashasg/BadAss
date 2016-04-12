@@ -4,7 +4,7 @@
 #include "LetterPuzzleConsole.h"
 
 
-void ALetterPuzzleConsole::UpdateTheWord(FString i_newLetter)
+bool ALetterPuzzleConsole::UpdateTheWord(FString i_newLetter)
 {
 	if (theWord == "Wrong Password!") {
 		theWord = "";
@@ -13,11 +13,13 @@ void ALetterPuzzleConsole::UpdateTheWord(FString i_newLetter)
 	if (theWord.Len() >= theCorrectWord.Len()) {
 		if (theWord == theCorrectWord) {
 			theWord = "You win!";
+			return true;
 		}
 		else {
 			theWord = "Wrong Password!";
 		}
 	}
+	return false;
 }
 
 // Sets default values
