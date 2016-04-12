@@ -15,7 +15,7 @@ ASliderConsole::ASliderConsole()
 void ASliderConsole::BeginPlay()
 {
 	Super::BeginPlay();
-	//emptyIndex = 15;
+	emptyIndex = 15;
 }
 
 // Called every frame
