@@ -38,6 +38,9 @@ bool ASliderConsole::CheckPattern() {
 }
 
 bool ASliderConsole::MoveTile(int32 index) {
+	if (index < 0 || index > 15) {
+		return false;
+	}
 	// Check if this is next to the empty one
 	if (sliderButtons[index]->currentPosition % 4 == 0) {
 		if (sliderButtons[index]->currentPosition - 4 != sliderButtons[emptyIndex]->currentPosition
