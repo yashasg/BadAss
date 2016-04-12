@@ -24,6 +24,10 @@ public:
 	void ADigitalClock::OnInteraction_Implementation();
 UPROPERTY(EditAnyWhere,BlueprintReadWrite,Category="Digital Clock")
 bool m_Editable;
+UPROPERTY(EditAnyWhere, BlueprintReadWrite, Category = "Digital Clock")
+uint8  m_Hours;
+UPROPERTY(EditAnyWhere, BlueprintReadWrite, Category = "Digital Clock")
+uint8  m_Minutes;
 UFUNCTION(BlueprintCallable, Category = "Digital Clock")
 void UpdateTime(class UTextRenderComponent* i_Minutes, class UTextRenderComponent* i_Seconds);
 UFUNCTION(BlueprintCallable, Category = "Digital Clock")
@@ -42,8 +46,6 @@ private:
 	class UTextRenderComponent* m_TextHour;
 	class UTextRenderComponent* m_TextMin;
 
-uint8_t  m_Hours;
-uint8_t  m_Minutes;
 uint8_t  m_Seconds;
 
 	

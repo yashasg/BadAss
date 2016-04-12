@@ -69,7 +69,7 @@ bool ADigitalClock::checkTimeEqual(ADigitalClock * i_other)
 {
 	if (m_Hours == i_other->m_Hours && m_Minutes == i_other->m_Minutes)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("EqualTIme"));
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Equal Time"));
 		return true;
 	}
 	else 
@@ -89,10 +89,10 @@ void ADigitalClock::checkConstraints()
 		m_Minutes += 1;
 		m_Seconds = 0;
 	}
-	if (m_Minutes == 60) {
+	/*if (m_Minutes == 60) {
 		m_Hours += 1;
 		m_Minutes = 0;
-	}
+	}*/
 	if (m_Hours == 13) {
 		m_Hours = 1;
 	}
