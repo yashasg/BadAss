@@ -22,6 +22,22 @@ bool ALetterPuzzleConsole::UpdateTheWord(FString i_newLetter)
 	return false;
 }
 
+void ALetterPuzzleConsole::ChangeSolution()
+{
+	// Changed the corretWord
+	theCorrectWord = theCorrectWords[rand() % theCorrectWords.Num()]; FOutputDeviceNull ar;
+	for (int i = 0; i < theCorrectWord.Len(); ++i) {
+		for (int j = 0; j < solutionButtons.Num(); ++j) {
+			if (solutionButtons[j]->theLetter[0] == theCorrectWord[i]) {
+				solutionButtons[j]->CallFunctionByNameWithArguments(TEXT("ChangeToRed"), ar, NULL, true);
+			}
+			else {
+				solutionButtons[j]->CallFunctionByNameWithArguments(TEXT("ChangeToBlue"), ar, NULL, true);
+			}
+		}
+	}
+}
+
 // Sets default values
 ALetterPuzzleConsole::ALetterPuzzleConsole()
 {

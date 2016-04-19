@@ -3,6 +3,7 @@
 #pragma once
 
 #include "GameFramework/Actor.h"
+#include "LetterPuzzleButton.h"
 #include "LetterPuzzleConsole.generated.h"
 
 UCLASS()
@@ -15,10 +16,18 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PuzzleConsoleProperties")
 	FString theWord;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PuzzleConsoleProperties")
-	FString theCorrectWord;
+		TArray<FString> theCorrectWords; 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PuzzleConsoleProperties")
+		FString theCorrectWord;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PuzzleConsoleProperties")
+	TArray<ALetterPuzzleButton*> solutionButtons;
 
 	UFUNCTION(BlueprintCallable, Category = "PuzzleConsoleFunctions")
 	bool UpdateTheWord(FString i_newLetter);
+
+	UFUNCTION(BlueprintCallable, Category = "PuzzleConsoleFunctions")
+		void ChangeSolution();
 
 	// Sets default values for this actor's properties
 	ALetterPuzzleConsole();
