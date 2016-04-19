@@ -25,8 +25,9 @@ bool ALetterPuzzleConsole::UpdateTheWord(FString i_newLetter)
 void ALetterPuzzleConsole::ChangeSolution()
 {
 	// Changed the corretWord
-	theCorrectWord = theCorrectWords[rand() % theCorrectWords.Num()]; FOutputDeviceNull ar;
-	for (int i = 0; i < theCorrectWord.Len(); ++i) {
+	theCorrectWord = theCorrectWords[rand() % theCorrectWords.Num()];
+	FOutputDeviceNull ar;
+	/*for (int i = 0; i < theCorrectWord.Len(); ++i) {
 		for (int j = 0; j < solutionButtons.Num(); ++j) {
 			if (solutionButtons[j]->theLetter[0] == theCorrectWord[i]) {
 				solutionButtons[j]->CallFunctionByNameWithArguments(TEXT("ChangeToRed"), ar, NULL, true);
@@ -34,6 +35,22 @@ void ALetterPuzzleConsole::ChangeSolution()
 			else {
 				solutionButtons[j]->CallFunctionByNameWithArguments(TEXT("ChangeToBlue"), ar, NULL, true);
 			}
+		}
+	}*/
+	bool isChosen;
+	for (int i = 0; i < solutionButtons.Num(); ++i) {
+		isChosen = false;
+		for (int j = 0; j < theCorrectWord.Len(); ++j) {
+			if (solutionButtons[i]->theLetter[0] == theCorrectWord[j]) {
+				isChosen = true;
+				break;
+			}
+		}
+		if (isChosen) {
+			solutionButtons[i]->CallFunctionByNameWithArguments(TEXT("ChangeToBlue"), ar, NULL, true);
+		}
+		else {
+			solutionButtons[i]->CallFunctionByNameWithArguments(TEXT("ChangeToRed"), ar, NULL, true);
 		}
 	}
 }

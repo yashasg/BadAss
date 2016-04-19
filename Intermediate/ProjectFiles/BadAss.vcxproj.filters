@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\BadAss.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{D846B1AF-69A9-4540-A279-84EBD4335CC9}</UniqueIdentifier>
+			<UniqueIdentifier>{AE424E12-450B-493F-A8E7-AA04F9D12EB7}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\BadAss.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{C0573AF6-D637-45DA-9964-AD85189CBC3E}</UniqueIdentifier>
+			<UniqueIdentifier>{E9B736F4-47F0-40BB-BDFD-9729B32AEC7E}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -31,7 +31,7 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\BadAss">
-			<UniqueIdentifier>{49B94C9D-7A28-4B49-B799-477B14A610E0}</UniqueIdentifier>
+			<UniqueIdentifier>{C8751A0C-9A42-4C93-83B1-2077D35706C6}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\BadAss\BadAss.Build.cs">
 			<Filter>Source\BadAss</Filter>
