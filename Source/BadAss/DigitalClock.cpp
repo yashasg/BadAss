@@ -59,9 +59,17 @@ void ADigitalClock::setTextHour(UTextRenderComponent * i_TextHour)
 	m_TextHour->SetText(FText::AsNumber(m_Hours));
 }
 
-void ADigitalClock::clickInteracted()
+void ADigitalClock::clickInteracted(float i_y)
 {
-	OnInteraction_Implementation();
+	if(i_y> -10.0f)
+	m_Minutes += 1;
+
+	else
+	{
+		m_Hours += 1;
+	}
+	checkConstraints();
+	setTextofTime();
 }
 
 void ADigitalClock::setTextMinute(UTextRenderComponent * i_TextMin)
