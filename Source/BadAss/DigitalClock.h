@@ -33,7 +33,7 @@ public:
 		void setTextHour(class UTextRenderComponent* i_TextHour);
 
 	UFUNCTION(BlueprintCallable, Category = "Digital Clock")
-		void clickInteracted();
+		void clickInteracted(float i_y);
 
 	UFUNCTION(BlueprintCallable, Category = "Digital Clock")
 		void setTextMinute(class UTextRenderComponent* i_TextMin);
