@@ -102,10 +102,10 @@ void ADigitalClock::checkConstraints()
 		m_Minutes += 1;
 		m_Seconds = 0;
 	}
-	/*if (m_Minutes == 60) {
+	if (m_Minutes == 60) {
 	m_Hours += 1;
 	m_Minutes = 0;
-	}*/
+	}
 	if (m_Hours == 13) {
 		m_Hours = 1;
 	}
