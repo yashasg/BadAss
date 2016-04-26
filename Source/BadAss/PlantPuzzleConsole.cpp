@@ -2,7 +2,8 @@
 
 #include "BadAss.h"
 #include "PlantPuzzleConsole.h"
-
+#include "UnrealMath.h"
+#include "UnrealMathUtility.h"
 
 // Sets default values
 APlantPuzzleConsole::APlantPuzzleConsole()
@@ -41,11 +42,16 @@ bool APlantPuzzleConsole::ClickButtonAt(int32 i_indexButton) {
 	}
 	if (solution[m_indexProgress] != i_indexButton) {
 		// start over
+		//TurnOnAllButtons();
+		//ResetButtons();
+		RandomButtons(m_indexProgress);
 		m_indexProgress = 0;
-		ResetButtons();
 		return false;
 	}
 
+	if (i_indexButton == 0) {
+		ResetButtons();
+	}
 	// Turn on or turn of the light
 	buttons[i_indexButton]->TurnOn();
 
@@ -69,5 +75,20 @@ void APlantPuzzleConsole::ResetButtons() {
 void APlantPuzzleConsole::TurnOnAllButtons() {
 	for (int i = 0; i < 25; ++i) {
 		buttons[i]->TurnOn();
+	}
+}
+
+void APlantPuzzleConsole::RandomButtons(int32 i_indexProgress) {
+	for (int i = 0; i < 25; ++i) {
+		buttons[i]->TurnOff();
+	}
+	// randomly turn on some buttons.
+	for (int i = 0; i < 8; ++i) {
+		buttons[FMath::RandRange(0, 24)]->TurnOn();
+	}
+
+	// turn off all the buttons in solution.
+	for (int i = 0; i < i_indexProgress; ++i) {
+		buttons[solution[i]]->TurnOff();
 	}
 }

@@ -40,4 +40,5 @@ public:
 private:
 	void ResetButtons();
 	void TurnOnAllButtons();
+	void RandomButtons(int32 i_indexProgress);
 };
